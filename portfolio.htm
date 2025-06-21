@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="potfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/563a2e3b4b.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header>
+    <nav>
+        <div class="left">
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contects Me</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<main>
+    <section class="menu1">
+        <div class="leftmenu">
+       <h4>   Hi.. my Name is <span class="purpel">Nikhil</span> kalra
+           <div>and I am a web devloper</div> </h4>
+        </div>
+        <div class="rightmenu">
+            <img src="icon1.png">
+        </div>
+    </section>
+    <section class="menu2">
+        <div class="row">
+            <div class="coloum1">
+            <img src="icon3.png" alt="">
+            </div>
+            <div class="coloum2">
+                <h4 class= "about">About<span class="purpel"> Me </span> </h4>
+                <p>I'm Nikhil, a frontend developer skilled in HTML, CSS, and JavaScript. I'm currently sharpening my JavaScript skills and aiming to become a full-stack Python developer, with a long-term goal of entering the field of data science. I’m passionate about tech, politics, and history.</p>
+
+
+                <div class="tab-titles">
+                    <div class="tab-links active-link" onclick="opentab('Skills')">Skills</div>
+                    <div class="tab-links" onclick="opentab('Experience')">Experience</div>
+                    <div class="tab-links" onclick="opentab('Education')">Education</div>
+                </div>
+
+
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>UX/UI</span><br>Desining Interfaces</li>
+                        <li><span>We devlopment</span><br>Frount-end Desining</li>
+                    </ul>
+                </div>
+                 <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2025 - Current</span><br>intern at codesoft</li>
+                        <li><span>Personal projects </span><br>Amazon Clone</li>
+                    </ul>
+                </div>
+                 <div class="tab-contents"id="Education">
+                    <ul>
+                        <li><span>College</span><br>ATMs group of institute</li>
+                        <li><span>DGREE</span><br>BCA 2nd year</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="services">
+        <div class="container">
+            <h1 class="services1">My Services</h1>
+            <div class="mainbox">
+            <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>web Design</h2>
+            <p>I create clean, responsive website designs <br> using modern HTML and CSS. My focus is <br> on user-friendly layouts <br> and mobile-first design..</p>
+            <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-globe"></i>
+            <h2>UX/UI Design</h2>
+            <p>I create clean, modern UI layouts <br> with a strong focus on usability  <br>and user flow i work on  <br> morden design </p>
+            <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+            <h2>Apps Design</h2>
+            <p>I focus on designing mobile app screens <br> that are easy to use, visually  <br>appealing, and responsive <br> across devices..</p>
+            <a href="#">learn more</a>
+            </div>
+        
+        </div>
+    </div>
+</main>
+
+<script src="portfolio.js"></script>
+</body>
+</html>
