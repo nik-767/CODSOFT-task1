@@ -18,11 +18,11 @@
         </div>
         <div class="right">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contects Me</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contect">Contact Me</a></li>
             </ul>
         </div>
     </nav>
@@ -30,7 +30,7 @@
 <main>
     <section class="menu1">
         <div class="leftmenu">
-       <h4>   Hi.. my Name is <span class="purpel">Nikhil</span> kalra
+       <h4 id="home">   Hi.. my Name is <span class="purpel">Nikhil</span> kalra
            <div>and I am a web devloper</div> </h4>
         </div>
         <div class="rightmenu">
@@ -43,7 +43,7 @@
             <img src="icon3.png" alt="">
             </div>
             <div class="coloum2">
-                <h4 class= "about">About<span class="purpel"> Me </span> </h4>
+                <h4 class= "about" id="about">About<span class="purpel"> Me </span> </h4>
                 <p>I'm Nikhil, a frontend developer skilled in HTML, CSS, and JavaScript. I'm currently sharpening my JavaScript skills and aiming to become a full-stack Python developer, with a long-term goal of entering the field of data science. I’m passionate about tech, politics, and history.</p>
 
 
@@ -79,7 +79,7 @@
 
     <div class="services">
         <div class="container">
-            <h1 class="services1">My Services</h1>
+            <h1 class="services1" id="services">My Services</h1>
             <div class="mainbox">
             <div>
             <i class="fa-solid fa-code"></i>
@@ -100,6 +100,61 @@
             <a href="#">learn more</a>
             </div>
         
+        </div>
+    </div>
+    <section id="projects">
+  <h2>My Projects</h2>
+  <div class="projects-container">
+    <div class="project-card">
+      <video controls>
+  <source src="amazon - Personal - Microsoft​ Edge 2025-06-18 23-39-04.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+      <h3>Amazon Clone</h3>
+      <p>A fully responsive Amazon homepage clone using HTML, CSS, and JavaScript.</p>
+      <a href="https://github.com/yourgithub/amazon-clone" target="_blank">View Code</a>
+    </div>
+    
+    <div class="project-card">
+      <img src="project2.png" alt="Project 2 ">
+      <h3>Portfolio Website</h3>
+      <p>My personal portfolio site built with modern web tech. Clean, fast, and responsive.</p>
+      <a href="https://github.com/nik-767/CODSOFT.git" target="_blank">view Code</a>
+    </div>
+
+    
+  </div>
+</section>
+
+    <div id="contact1">
+        <div class="contaner" id="contect">
+            <div class="row">
+                <div class="left-coloum">
+                    <h1 class="contect-me">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>nikhilkalra@gmail.com</p>
+                    <P><i class="fa-solid fa-phone"></i>89*********</P>
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                 <div class="cv">   <a href="Nikhil_Kalra_CV.pdf" download>
+  <button type="button">Download CV</button>
+</a> </div>
+
+                </div>
+                <div class="right-coloum">
+                    <form action="https://formspree.io/f/mjkrjqlb" method="POST">
+  <input type="text" name="name" placeholder="Your name" required>
+  <input type="email" name="email" placeholder="Your email" required>
+  <textarea name="message" placeholder="Your message" required></textarea>
+  
+  <button type="submit">Send</button>
+</form>
+                </div>
+            </div>
         </div>
     </div>
 </main>
