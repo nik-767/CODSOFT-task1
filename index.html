@@ -1,164 +1,116 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Nikhil Kalra — Portfolio</title>
+    <meta name="description" content="Nikhil Kalra — Frontend Developer. Projects from GitHub, skills, achievements and contact.">
     <link rel="stylesheet" href="potfolio.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/563a2e3b4b.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="theme-color" content="#2B3D8A">
 </head>
 <body>
-<header>
-    <nav>
-        <div class="left">
-        </div>
-        <div class="right">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contect">Contact Me</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
-<main>
-    <section class="menu1">
-        <div class="leftmenu">
-       <h4 id="home">   Hi.. my Name is <span class="purpel">Nikhil</span> kalra
-           <div>and I am a web devloper</div> </h4>
-        </div>
-        <div class="rightmenu">
-            <img src="icon1.png">
-        </div>
-    </section>
-    <section class="menu2">
-        <div class="row">
-            <div class="coloum1">
-            <img src="icon3.png" alt="">
-            </div>
-            <div class="coloum2">
-                <h4 class= "about" id="about">About<span class="purpel"> Me </span> </h4>
-                <p>I'm Nikhil, a frontend developer skilled in HTML, CSS, and JavaScript. I'm currently sharpening my JavaScript skills and aiming to become a full-stack Python developer, with a long-term goal of entering the field of data science. I’m passionate about tech, politics, and history.</p>
 
-
-                <div class="tab-titles">
-                    <div class="tab-links active-link" onclick="opentab('Skills')">Skills</div>
-                    <div class="tab-links" onclick="opentab('Experience')">Experience</div>
-                    <div class="tab-links" onclick="opentab('Education')">Education</div>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#home">
+                <img class="avatar" src="https://avatars.githubusercontent.com/u/183966908?v=4" alt="Nikhil avatar">
+                <div class="brand-text">
+                    <strong>Nikhil Kalra</strong>
+                    <span class="muted">Frontend Developer</span>
                 </div>
+            </a>
 
+            <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fa fa-bars"></i>
+            </button>
 
-                <div class="tab-contents active-tab" id="Skills">
-                    <ul>
-                        <li><span>UX/UI</span><br>Desining Interfaces</li>
-                        <li><span>We devlopment</span><br>Frount-end Desining</li>
-                    </ul>
+            <nav class="site-nav" id="site-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <h1>Hi, I'm <span class="accent">Nikhil</span> Kalra</h1>
+                    <p class="lead">I build responsive front-end experiences using HTML, CSS and JavaScript. I'm learning full-stack Python and exploring AI projects.</p>
+                    <p class="cta-row">
+                        <a class="btn primary" href="#projects">View Projects</a>
+                        <a class="btn ghost" href="https://github.com/nik-767" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </p>
                 </div>
-                 <div class="tab-contents" id="Experience">
-                    <ul>
-                        <li><span>2025 - Current</span><br>intern at codesoft</li>
-                        <li><span>Personal projects </span><br>Amazon Clone</li>
-                    </ul>
-                </div>
-                 <div class="tab-contents"id="Education">
-                    <ul>
-                        <li><span>College</span><br>ATMs group of institute</li>
-                        <li><span>DGREE</span><br>BCA 2nd year</li>
-                    </ul>
+                <div class="hero-visual">
+                    <img src="https://avatars.githubusercontent.com/u/183966908?v=4" alt="Nikhil avatar">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-
-    <div class="services">
-        <div class="container">
-            <h1 class="services1" id="services">My Services</h1>
-            <div class="mainbox">
-            <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>web Design</h2>
-            <p>I create clean, responsive website designs <br> using modern HTML and CSS. My focus is <br> on user-friendly layouts <br> and mobile-first design..</p>
-            <a href="#">learn more</a>
+        <section id="about" class="section about">
+            <div class="container">
+                <h2>About</h2>
+                <p>I'm Nikhil — a frontend developer skilled in HTML, CSS and JavaScript. I enjoy building clean UI, learning Python for backend work and experimenting with small AI projects.</p>
             </div>
-            <div>
-                <i class="fa-solid fa-globe"></i>
-            <h2>UX/UI Design</h2>
-            <p>I create clean, modern UI layouts <br> with a strong focus on usability  <br>and user flow i work on  <br> morden design </p>
-            <a href="#">learn more</a>
+        </section>
+
+        <section id="projects" class="section projects">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Projects</h2>
+                    <p class="muted">Public projects from <a href="https://github.com/nik-767" target="_blank" rel="noopener noreferrer">github.com/nik-767</a></p>
+                </div>
+                <div id="projects-grid" class="projects-grid">Loading projects...</div>
             </div>
-            <div>
-                <i class="fa-brands fa-app-store"></i>
-            <h2>Apps Design</h2>
-            <p>I focus on designing mobile app screens <br> that are easy to use, visually  <br>appealing, and responsive <br> across devices..</p>
-            <a href="#">learn more</a>
-            </div>
-        
-        </div>
-    </div>
-    <section id="projects">
-  <h2>My Projects</h2>
-  <div class="projects-container">
-    <div class="project-card">
-      <video controls>
-  <source src="amazon - Personal - Microsoft​ Edge 2025-06-18 23-39-04.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+        </section>
 
-      <h3>Amazon Clone</h3>
-      <p>A fully responsive Amazon homepage clone using HTML, CSS, and JavaScript.</p>
-      <a href="https://github.com/nik-767/amazon-clone.git" target="_blank">View Code</a>
-    </div>
-    
-    <div class="project-card">
-      <img src="project2.png" alt="Project 2 ">
-      <h3>Portfolio Website</h3>
-      <p>My personal portfolio site built with modern web tech. Clean, fast, and responsive.</p>
-      <a href="https://github.com/nik-767/CODSOFT.git" target="_blank">view Code</a>
-    </div>
-
-    
-  </div>
-</section>
-
-    <div id="contact1">
-        <div class="contaner" id="contect">
-            <div class="row">
-                <div class="left-coloum">
-                    <h1 class="contect-me">Contact Me</h1>
-                    <p><i class="fa-solid fa-envelope"></i>nikhilkalra@gmail.com</p>
-                    <P><i class="fa-solid fa-phone"></i>897********</P>
-                    <div class="icons">
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <i class="fa-brands fa-twitter"></i>
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div id="skills-list" class="skills-list">
                     </div>
-                 <div class="cv">   <a href="Nikhil_Kalra_CV.pdf" download>
-  <button type="button">Download CV</button>
-</a> </div>
-
-                </div>
-                <div class="right-coloum">
-                    <form action="https://formspree.io/f/mjkrjqlb" method="POST">
-  <input type="text" name="name" placeholder="Your name" required>
-  <input type="email" name="email" placeholder="Your email" required>
-  <textarea name="message" placeholder="Your message" required></textarea>
-  
-  <button type="submit">Send</button>
-</form>
-                </div>
             </div>
-        </div>
-    </div>
-</main>
+        </section>
 
-<script src="portfolio.js"></script>
+        <section id="achievements" class="section achievements">
+            <div class="container">
+                <h2>Achievements & Certifications</h2>
+                <p class="muted">LinkedIn: <a href="https://www.linkedin.com/in/nikhil-kalra-343t" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/nikhil-kalra-343t</a></p>
+                
+                
+                <div id="achievements-list" class="achievements-list">No achievements loaded.</div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <p>Find me on <a href="https://github.com/nik-767" target="_blank" rel="noopener noreferrer">GitHub</a> or send a message to <strong>nikhilkalra124421@gmail.com</strong></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2025 Nikhil Kalra — Built with HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="responsive.css">
+    <script src="portfolio.js"></script>
+    <script src="animations.js"></script>
 </body>
 </html>
